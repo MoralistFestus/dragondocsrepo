@@ -12,26 +12,42 @@
     <br>
     <br>
     
-    <code style="color: green; font-size: large;">
+    In computer programming, a comment is a programmer-readable explanation or annotation in the source code of a computer program. They are added with the purpose of making the source code easier for humans to understand, and are generally ignored by
+    compilers and interpreters. The syntax of comments in various programming languages varies considerably.
+    Comments are sometimes processed in various ways to generate documentation external to the source code itself by documentation generators , or used for integration with source code management systems and other kinds of external programming tools .
+    The flexibility provided by comments allows for a wide degree of variability, but formal conventions for their use are commonly part of programming style guides.
+    <br>
+    <h4>Dragon has two types of comments:</h4>
+    In Dragon, Comments are generally formatted as either
+    block comments (also called prologue comments or stream comments) or line comments (also called inline comments).
     
-        // Line comment
-
-        <br>
-        <br>
-    
-        /* multiline
-        comment
-        */
-
-        <br>
-        <br>
-    
-    </code>
+    <h3>1) Block comments:</h3> 
+    Block Comments delimit a region of source code which may span multiple lines or a part of a single line. This region is specified with a start delimiter and an end delimiter
+    For example, Dragon has block comments delimited by <mark>/*</mark> and <mark>*/</mark> that can span multiple lines.
     
     <br>
-    <br>
-
-    <code>
+    
+    <code style="color: green; font-size: large;"><pre>
+    
+    /*  This is a block comments, 
+    and can span multiple 
+    lines  */
+    
+    </pre></code>
+    
+    <h3>2) Line Comments:</h3>
+    Line comments either start with a comment delimiter and continue until the end of the line, or in some cases, start at a specific column (character line offset) in the source code, and continue until the end of the line. Note that a line comments cannot span multiple lines. Line. comment can be repeated multiple time but cannot span multiple lines. 
+    in Dragon, Line comment is delimited by <mark>//</mark> that can only span a single line. 
+    
+    <code style="color: green; font-size: large;"><pre>
+    // Line comment 
+    
+    // Line comments can be
+    // repeated multiple times
+    // but cannot span 
+    // multiple lines
+    
+    </pre></code>
 
         <span style="color: blue;">show</span> <span style="color: green; font-size: large;">/*inner comment*/</span> "Text"
 
